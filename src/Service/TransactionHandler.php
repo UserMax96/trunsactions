@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace TransactionsSystem\Service;
 
-use TransactionsSystem\Entity\Account;
 use TransactionsSystem\Entity\AccountInterface;
 use TransactionsSystem\Entity\Exception\IncorrectAmountException;
 use TransactionsSystem\Entity\Exception\InsufficientFundsException;
@@ -70,7 +69,7 @@ readonly class TransactionHandler
 
         $this->accountRepository->update($account);
     }
-    
+
     public function transfer(TransferCommand $command): void
     {
         if ($command->amount <= 0) {
