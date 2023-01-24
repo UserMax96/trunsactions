@@ -1,0 +1,29 @@
+{
+    "name": "test/transactions-system",
+    "autoload": {
+        "psr-4": {
+            "TransactionsSystem\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TransactionsSystem\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Max Cherapko",
+            "email": "keyser_soze314@mail.ru"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "ramsey/uuid": "^4.7",
+        "webmozart/assert": "^1.11",
+        "ramsey/collection": "^2.0",
+        "friendsofphp/php-cs-fixer": "^3.13"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
